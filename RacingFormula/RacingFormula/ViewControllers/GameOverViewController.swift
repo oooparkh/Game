@@ -5,22 +5,21 @@ class GameOverViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var restartButton: UIButton!
-    @IBOutlet weak var menuButton: UIButton!
-    @IBOutlet weak var records: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var backRestartButtonView: UIImageView!
-    @IBOutlet weak var backMenuButtonView: UIImageView!
-    
-    @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak private var restartButton: UIButton!
+    @IBOutlet weak private var menuButton: UIButton!
+    @IBOutlet weak private var records: UILabel!
+    @IBOutlet weak private var imageView: UIImageView!
+    @IBOutlet weak private var backRestartButtonView: UIImageView!
+    @IBOutlet weak private var backMenuButtonView: UIImageView!
+    @IBOutlet weak private var visualEffectView: UIVisualEffectView!
     
     // MARK: - Public properties
     
     var userName = ""
-    var userScore = 0
-    var userRecordsDate = ""
-    var lastRecords = ""
-    var recordsArray = [String]()
+    private var userScore = 0
+    private var userRecordsDate = ""
+    private var lastRecords = ""
+    private var recordsArray = [String]()
     
     // MARK: - Lifestyle functions
     

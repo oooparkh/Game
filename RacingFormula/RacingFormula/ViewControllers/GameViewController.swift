@@ -5,29 +5,28 @@ class GameViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var userScoreLabel: UILabel!
-    @IBOutlet weak var viewForMarks: UIView!
-    @IBOutlet weak var viewForButtons: UIView!
-    @IBOutlet weak var leftButton: UIButton!
-    @IBOutlet weak var rightButton: UIButton!
-    @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak private var userNameLabel: UILabel!
+    @IBOutlet weak private var userScoreLabel: UILabel!
+    @IBOutlet weak private var viewForMarks: UIView!
+    @IBOutlet weak private var viewForButtons: UIView!
+    @IBOutlet weak private var leftButton: UIButton!
+    @IBOutlet weak private var rightButton: UIButton!
+    @IBOutlet weak private var mainView: UIView!
     
     // MARK: - Public properties
     
-    var timerForCrash = Timer()
-    var timerForAnimateBarrier = Timer()
-    var timerForScore = Timer()
-    var choosenCar = ""
-    var choosenBarrier = ""
+    private var timerForCrash = Timer()
+    private var timerForAnimateBarrier = Timer()
+    private var timerForScore = Timer()
+    private var choosenCar = ""
+    private var choosenBarrier = ""
     var userName = ""
-    var userCount = 0
-    var stopAnimationsFlag: Bool = true
-    var userData: UserData?
-//    var speed = 0.1
-    let mainCar = UIImageView()
-    let barrier = UIImageView()
-    let dateFormatter = DateFormatter()
+    private var userCount = 0
+    private var stopAnimationsFlag: Bool = true
+    private var userData: UserData?
+    private let mainCar = UIImageView()
+    private let barrier = UIImageView()
+    private let dateFormatter = DateFormatter()
     
     // MARK: - Lifestyle functions
 
@@ -123,7 +122,6 @@ class GameViewController: UIViewController {
     }
     
     func animateRoad() {
-//        speed *= 0.98
         if stopAnimationsFlag == true {
             view.layoutIfNeeded()
             UIView.animate(withDuration: 0.1, delay: 0, options: [.curveLinear], animations: {

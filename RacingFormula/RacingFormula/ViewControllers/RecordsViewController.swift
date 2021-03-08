@@ -5,19 +5,19 @@ class RecordsViewController: UIViewController {
 
     // MARK: - IBOutlets
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var visualEffectView: UIVisualEffectView!
-    @IBOutlet weak var recordsLabel: UILabel!
-    @IBOutlet weak var backButtonView: UIView!
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var backDeleteButtonView: UIView!
-    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak private var imageView: UIImageView!
+    @IBOutlet weak private var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak private var recordsLabel: UILabel!
+    @IBOutlet weak private var backButtonView: UIView!
+    @IBOutlet weak private var backButton: UIButton!
+    @IBOutlet weak private var tableView: UITableView!
+    @IBOutlet weak private var backDeleteButtonView: UIView!
+    @IBOutlet weak private var clearButton: UIButton!
     
     // MARK: - Public properties
     
-    var array = UserDefaults.standard.object(forKey: "lastRecord") as? [String] ?? [String]()
-    var recordsArray = [String]()
+    private  var array = UserDefaults.standard.object(forKey: "lastRecord") as? [String] ?? [String]()
+    private var recordsArray = [String]()
     
     // MARK: - Lifestyle functions
     

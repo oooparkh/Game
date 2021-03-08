@@ -5,16 +5,16 @@ class ViewController: UIViewController {
 
     // MARK: - IBOutlets
     
-    @IBOutlet weak var gameButton: UIButton!
-    @IBOutlet weak var recordsButton: UIButton!
-    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak private var gameButton: UIButton!
+    @IBOutlet weak private var recordsButton: UIButton!
+    @IBOutlet weak private var settingsButton: UIButton!
         
     // MARK: - Public properties
     
-    var choosenCar = ""
-    var choosenBarrier = ""
-    var userName = ""
-    var userData: UserData?
+   private var choosenCar = ""
+   private var choosenBarrier = ""
+   var userName = ""
+   private var userData: UserData?
 
     // MARK: - Lifestyle functions
     

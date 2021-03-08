@@ -5,30 +5,30 @@ class SettingsViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var choosenCar: UIImageView!
-    @IBOutlet weak var obstacle: UIImageView!
-    @IBOutlet weak var blackCarButton: UIButton!
-    @IBOutlet weak var redCarButton: UIButton!
-    @IBOutlet weak var orangeCarButton: UIButton!
-    @IBOutlet weak var barrierButton: UIButton!
-    @IBOutlet weak var carButton: UIButton!
-    @IBOutlet weak var stoneButton: UIButton!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var visualEffectView: UIVisualEffectView!
-    @IBOutlet weak var backViewBackButton: UIView!
-    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak private var scrollView: UIScrollView!
+    @IBOutlet weak private var saveButton: UIButton!
+    @IBOutlet weak private var choosenCar: UIImageView!
+    @IBOutlet weak private var obstacle: UIImageView!
+    @IBOutlet weak private var blackCarButton: UIButton!
+    @IBOutlet weak private var redCarButton: UIButton!
+    @IBOutlet weak private var orangeCarButton: UIButton!
+    @IBOutlet weak private var barrierButton: UIButton!
+    @IBOutlet weak private var carButton: UIButton!
+    @IBOutlet weak private var stoneButton: UIButton!
+    @IBOutlet weak private var nameTextField: UITextField!
+    @IBOutlet weak private var imageView: UIImageView!
+    @IBOutlet weak private var visualEffectView: UIVisualEffectView!
+    @IBOutlet weak private var backViewBackButton: UIView!
+    @IBOutlet weak private var backButton: UIButton!
     
     // MARK: - Public properties
     
     var userName = ""
-    var userData: UserData!
-    var selectedCar = "red_car_image"
-    var selectedObstacle = "yellow_car_image"
-    let userCars = ["black_car_image", "red_car_image", "orange_car_image"]
-    let userObstacles = ["barrier_image", "yellow_car_image", "stone_image"]
+    private var userData: UserData!
+    private var selectedCar = "red_car_image"
+    private var selectedObstacle = "yellow_car_image"
+    private let userCars = ["black_car_image", "red_car_image", "orange_car_image"]
+    private let userObstacles = ["barrier_image", "yellow_car_image", "stone_image"]
     
     // MARK: - Lifestyle functions
     
